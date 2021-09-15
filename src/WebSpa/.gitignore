@@ -180,7 +180,7 @@ ClientBin/
 orleans.codegen.cs
 
 #images
-wwwroot/*.jpg
+*.jpg
 
 /node_modules
 
