@@ -29,8 +29,8 @@ export class NasaDataComponent {
   async getImageDates() {
     this.httpClient.get<string[]>(this.baseUrl + 'v1/marsimage/dates')
       .subscribe(result => {
+
         this.imageDates = result;
-        console.log(this.imageDates);
       },
         error => console.error(error));
 
@@ -52,10 +52,7 @@ export class NasaDataComponent {
       .subscribe(result => {
 
         this.setLinkPicture(result.imageName);
-
         this.imageLoading = false;
-
-        console.log(this.imagePath)
       },
         error => console.error(error));
   }

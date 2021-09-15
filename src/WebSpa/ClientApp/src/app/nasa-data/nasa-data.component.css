@@ -76,16 +76,16 @@ tr:nth-child(even) {
   }
 
   .row{
-      min-width: 100%;
+      width: 100%;
   }
 
   .image-width-600 {
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
   }
 
   .emtpy-card {
-    min-width: 100%;
+    max-width: 100%;
     height: auto
   }
 }

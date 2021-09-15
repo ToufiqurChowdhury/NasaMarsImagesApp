@@ -1,4 +1,4 @@
-This project demonstrates fetch/load Mars Rovar Image of the day using NASA API. 
+This project demonstrates fetch/load Mars Rover Image of the day using NASA API. 
 
 WebSpa Application
 ==================
