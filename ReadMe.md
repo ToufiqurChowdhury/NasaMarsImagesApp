@@ -10,7 +10,7 @@ Application Features:
 1. Component to present Image Dates as button list
 2. Image Viewer Card for on button click view operation.  
 3. GetDates API to read from "dates.txt" file in "Dates" folder.
-4. GetImageContent API to get Image file information. Images are saved in "wwwroot" folder only once.
+4. GetImageContent API to get Image file information. Images are saved in "wwwroot" folder.
 
 Angular application consumes the APIs and load dates and image file from local environment.
 
