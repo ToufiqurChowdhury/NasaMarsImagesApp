@@ -1,12 +1,12 @@
 This project demonstrates fetch/load Mars Rovar Image of the day using NASA API. 
 
-WebSpa Application:
-=================
+WebSpa Application
+==================
 1. Angular Single Page Application
 2. API Gateway using .Net Core Server
 
-Application Features:
-===================
+Application Features
+====================
 1. Component to present Image Dates as button list
 2. Image Viewer Card for on button click view operation.  
 3. GetDates API to read from "dates.txt" file in "Dates" folder.
@@ -15,7 +15,7 @@ Application Features:
 Angular application consumes the APIs and load dates and image file from local environment.
 
 
-Tech Stack:
+Tech Stack
 ===========
 1. Angular
 2. .Net Core 5.0 
@@ -23,7 +23,7 @@ Tech Stack:
 NASA Api Nuget Package : 
 APOD.net 
 
-How to Run:
+How to Run
 ===========
 You can build and run this application in following steps
 
