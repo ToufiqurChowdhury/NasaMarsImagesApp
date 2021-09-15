@@ -1,4 +1,4 @@
-This Application is a Single Page Application project to demonstrate fetching Mars Rovar Image of the day using NASA API. 
+This project demonstrates fetching Mars Rovar Image of the day using NASA API. 
 
 WebSpa Application:
 =================
