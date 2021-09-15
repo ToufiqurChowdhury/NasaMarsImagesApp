@@ -23,7 +23,9 @@ RUN dotnet publish "WebSpa.csproj" -c Release -o /app/publish
 # 2. Angular Build
 #
 
-FROM 311303914270.dkr.ecr.us-west-2.amazonaws.com/node:latest-lts AS angular_build
+#ToDo
+#Update FROM
+#FROM  AS angular_build
 WORKDIR /build/src/WebSpa/ClientApp/
 COPY /src/WebSpa/ClientApp/package*.json ./
 COPY /src/WebSpa/ClientApp/.npmrc ./
