@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.column {
+  width: 100%;
+}
+
+.column-left {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.column-right {
+  float: right;
+  width: 70%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.table-wrapper {
+  position: relative;
+}
+
+.table-scroll {
+  height: 400px;
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: center;
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other on screens that are smaller than 600 px */
+@media screen and (max-width: 980px) {
+
+  .column {
+    width: 100%;
+  }
+
+  .column-left {
+    width: 100%;
+  }
+
+  .column-right {
+    width: 100%;
+  }
+
+  .row{
+      min-width: 100%;
+  }
+
+  .image-width-600 {
+    min-width: 100%;
+    height: auto;
+  }
+
+  .emtpy-card {
+    min-width: 100%;
+    height: auto
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+img {
+  border-radius: 5px 5px 5px 5px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-width-600 {
+  width: 600px;
+  height: auto;
+}
+
+.margin-top-80{
+    margin-top: 80px;
+}
+
+.btn {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.default {
+  color: black;
+}
+
+.emtpy-card {
+  width: 600px;
+  height: 400px
+}

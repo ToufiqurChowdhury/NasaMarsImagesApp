@@ -1,0 +1,29 @@
+<div class="header">
+  <h1 id="tableLabel">NASA Mars Rover Image Of The Day</h1>
+
+  <p>This application demonstrates fetching Mars Rover Images using NASA API</p>
+
+  <p *ngIf="!imageDates"><em>Loading...</em></p>
+</div>
+
+<div class="table-wrapper row margin-top-80">
+  <div class="table-scroll center column-left">
+    <table>
+      <tr>
+        <th>Image Dates</th>
+      </tr>
+      <tr *ngFor="let imageDate of imageDates">
+        <td><button class="center btn info" (click)="this.ImageContent(imageDate)"> {{ imageDate }}</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="column-right center image-width-600">
+    <div class="card" *ngIf="imagePath && !imageLoading">
+      <img [src]="getLinkPicture()" alt="mars-image">
+    </div>
+    <div class="card emtpy-card" *ngIf="!imagePath || imageLoading">
+    </div>
+  </div>
+</div>
+
