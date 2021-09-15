@@ -24,7 +24,7 @@ NASA Api Nuget Package :
 APOD.net 
 
 How to Run:
-
+===========
 You can build and run this application in following steps
 
 1. Git clone or download the application
@@ -43,8 +43,7 @@ You can also use Visual Studio Code to compile and run using,
 Please note: .Net application needs to be running for API gateway access
 
 Additional features:
-1. Dockerfile added
-
-Optimization work will be uploaded continuously. 
+====================
+1. Dockerfile added: Update if needed
 
 Please feel free to advise on any possible modification!   
