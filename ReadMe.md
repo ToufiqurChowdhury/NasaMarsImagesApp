@@ -2,8 +2,8 @@ This project demonstrates fetch/load Mars Rovar Image of the day using NASA API.
 
 WebSpa Application:
 =================
-1. Angular Single Page Application Project
-2. API Gateway Project using .Net Core Server
+1. Angular Single Page Application
+2. API Gateway using .Net Core Server
 
 Application Features:
 ===================
