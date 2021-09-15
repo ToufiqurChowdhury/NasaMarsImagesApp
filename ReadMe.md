@@ -40,10 +40,6 @@ You can also use Visual Studio Code to compile and run using,
 
 #ng serve
 
-Please note: .Net application needs to be running for API gateway access
-
-Additional features:
-====================
-1. Dockerfile added: Update if needed
+Note: .Net application needs to be running for API gateway access
 
 Please feel free to advise on any possible modification!   
