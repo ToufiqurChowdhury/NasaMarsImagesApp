@@ -179,6 +179,9 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 
+#images
+wwwroot/*.jpg
+
 /node_modules
 
 # RIA/Silverlight projects
