@@ -25,12 +25,15 @@ APOD.net
 
 How to Run
 ===========
+Please Update NASA_API_Key in "Contstants/MarsImageConstants.cs" 
+
 You can build and run this application in following steps
 
 1. Git clone or download the application
 2. Open in Visual Studio 2019 and build
 3. Run using IIS server
 4. WebSpa will be loaded in url, http://localhost:63655/
+
 
 You can also use Visual Studio Code to compile and run using,
 
