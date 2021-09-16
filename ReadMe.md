@@ -18,7 +18,8 @@ Angular application consumes the APIs and load dates and image file from local e
 Tech Stack
 ===========
 1. Angular
-2. .Net Core 5.0 
+2. .Net Core 5.0
+3. Xunit for Unit Test
 
 NASA Api Nuget Package : 
 APOD.net 
