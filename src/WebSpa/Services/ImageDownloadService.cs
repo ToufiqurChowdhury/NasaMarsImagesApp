@@ -24,6 +24,15 @@ namespace WebSpa.Services
 
         public async Task<SaveImageContentResponse> SaveMarsImageContent(DateTimeOffset requestDate)
         {
+            if (string.IsNullOrEmpty(MarsImageConstants.NASA_API_Key))
+            {
+                return new SaveImageContentResponse
+                {
+                    statusCode = StatusCode.InvalidArgument,
+                    message = "Mising API Key, NASA API Key is required!"
+                };
+            }
+
             var _client = new ApodClient(MarsImageConstants.NASA_API_Key);
 
             try
