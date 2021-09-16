@@ -76,6 +76,7 @@ namespace WebSpa.Services
             return new ReadFromDatesFileResponse
             {
                 imageDates = recordDates,
+                statusCode = StatusCode.OK
             };
         }
     }

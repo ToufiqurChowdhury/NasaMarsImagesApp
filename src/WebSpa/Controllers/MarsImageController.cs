@@ -35,12 +35,13 @@ namespace WebSpa.Controllers.V1
         [HttpGet]
         [Produces200OKAttribute]
         [Produces400ValidationErrorAttribute]
-        public async Task<IActionResult> GetImageOfTheDay([FromQuery]DateTimeOffset requestDate)
+        public async Task<ActionResult> GetImageOfTheDay([FromQuery]DateTimeOffset requestDate)
         {
             var response = await _imageDownloadService.SaveMarsImageContent(requestDate);
 
             if (response.statusCode != Grpc.Core.StatusCode.OK)
             {
+                _logger.LogError(response.message);
                 return BadRequest(response.message);
             }
 
@@ -55,12 +56,13 @@ namespace WebSpa.Controllers.V1
         [HttpGet("dates")]
         [Produces200OKAttribute]
         [Produces400ValidationError]
-        public async Task<IActionResult> GetDates()
+        public async Task<ActionResult> GetDates()
         {
             var response = _fileOperationService.getDatesFromFile(MarsImageConstants.Dates_File_Name);
 
             if (response.statusCode != Grpc.Core.StatusCode.OK)
             {
+                _logger.LogError(response.message);
                 return BadRequest(response.message);
             }
 
