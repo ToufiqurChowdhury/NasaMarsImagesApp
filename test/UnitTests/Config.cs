@@ -47,14 +47,14 @@ namespace UnitTests
                 .ReturnsAsync((DateTimeOffset requestDate) => new SaveImageContentResponse
                 {
                     statusCode = StatusCode.InvalidArgument,
-                    message = "Invalid Date!"
+                    message = "Dates must be between June 16 1995 and " + DateTimeOffset.UtcNow.ToString("MMMM dd yyyy") + ".",
                 });
 
             mockImageDownloadService.Setup(x => x.SaveMarsImageContent(futureImageDate))
                 .ReturnsAsync((DateTimeOffset requestDate) => new SaveImageContentResponse
                 {
                     statusCode = StatusCode.InvalidArgument,
-                    message = "Invalid Date!"
+                    message = "Dates must be between June 16 1995 and " + DateTimeOffset.UtcNow.ToString("MMMM dd yyyy") + ".",
                 });
 
             return mockImageDownloadService;

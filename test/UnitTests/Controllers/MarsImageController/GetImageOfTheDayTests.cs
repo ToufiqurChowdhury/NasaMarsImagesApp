@@ -22,14 +22,14 @@ namespace UnitTests.Controllers
         public async Task GetImageOfTheDayTest_InvalidDate()
         {
             var requestDate = Config.invalidImageDate;
-            await ExecuteValidation(requestDate, "Invalid Date!");
+            await ExecuteValidation(requestDate, "Dates must be between June 16 1995 and " + DateTimeOffset.UtcNow.ToString("MMMM dd yyyy") + ".");
         }
 
         [Fact]
         public async Task GetImageOfTheDayTest_FutureDate()
         {
             var requestDate = Config.futureImageDate;
-            await ExecuteValidation(requestDate, "Invalid Date!");
+            await ExecuteValidation(requestDate, "Dates must be between June 16 1995 and " + DateTimeOffset.UtcNow.ToString("MMMM dd yyyy") + ".");
         }
 
         private async Task ExecuteValidation(DateTimeOffset requestDate, string expectedErrorMsg = "")
