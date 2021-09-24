@@ -1,5 +1,9 @@
 This project demonstrates fetch/load Mars Rover Image of the day using NASA API. 
 
+User experience:
+================
+![NasaMarsImagesAppSS](https://user-images.githubusercontent.com/60831585/134740696-ff006a40-4545-4f6a-9727-7e9e5ca968da.PNG)
+
 WebSpa Application
 ==================
 1. Angular Single Page Application
@@ -35,7 +39,6 @@ You can build and run this application in following steps
 3. Run using IIS server
 4. WebSpa will be loaded in url, http://localhost:63655/
 
-
 You can also use Visual Studio Code to compile and run using,
 
 #npm install
@@ -46,4 +49,8 @@ You can also use Visual Studio Code to compile and run using,
 
 Note: .Net application needs to be running for API gateway access
 
-Please feel free to advise on any possible modification!   
+**Reference:**
+https://github.com/MarcusOtter/APOD.Net
+
+**License:**
+MIT License
